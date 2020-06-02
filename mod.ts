@@ -25,18 +25,3 @@ export function timeAgo(date: Date): string {
     return format(diff, 31536000000, 'year', 'last year', 'in a year', diff < 0);
 };
 
-const minute = 60 * 1000;
-const hour = 60 * minute;
-const day = 24 * hour;
-const month = 30 * day;
-const year = 12 * month;
-
-var now = new Date();
-var yesterday = new Date(now.getTime() - 60);
-var hoursAgo = new Date(now.getTime() - hour);
-var tomorrow = new Date(now.getTime() + year);
-var inSixHours = new Date(now.getTime() + (6 * hour));
-
-
-// present
-console.log(timeAgo(inSixHours)); // 'just now'

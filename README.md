@@ -4,7 +4,7 @@ This is the smallest, fully unit tested module to convert Date objects into huma
 
 ## Usage
 ```
-import { timeAgo } from "https://deno.land/x/timeAgo/mod.ts";
+import { timeAgo } from "https://deno.land/x/time_ago/mod.ts";
 
 const now = new Date();
 const yesterday = new Date(now.getTime() - (24 * 60 * 60 * 1000));
